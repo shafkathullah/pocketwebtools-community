@@ -1,0 +1,65 @@
+name: 🐞 Bug report
+description: Something is broken or behaving wrong
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Because the AI tools run on your device, the browser and hardware matter a lot, so please fill in the environment fields.
+  - type: input
+    id: tool
+    attributes:
+      label: Which tool?
+      placeholder: e.g. Background Remover (pocketweb.tools/background-remover)
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Upload / paste ...
+        3. Click ...
+        4. See ...
+    validations:
+      required: false
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome
+        - Edge
+        - Safari
+        - Firefox
+        - Other (note it below)
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - Desktop / laptop
+        - iPhone / iPad
+        - Android phone / tablet
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors (optional)
+      description: If you can, open DevTools (F12) → Console and paste any red errors. This helps a lot.
+      render: shell
+    validations:
+      required: false

@@ -1,0 +1,42 @@
+name: 💡 Tool request
+description: Suggest a new tool you would like to see on PocketWebTools
+title: "[Tool] "
+labels: ["tool request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea. The more 👍 a request gets, the more likely it ships.
+        For open-ended discussion instead of a concrete request, use the [Ideas discussion board](../../discussions/categories/ideas).
+  - type: input
+    id: tool
+    attributes:
+      label: What tool?
+      placeholder: e.g. PDF merger, QR code generator, local LLM chat
+    validations:
+      required: true
+  - type: textarea
+    id: usecase
+    attributes:
+      label: What would you use it for?
+      description: A concrete example helps a lot.
+      placeholder: e.g. "I need to merge a few scanned PDFs without uploading them to a random site."
+    validations:
+      required: true
+  - type: dropdown
+    id: privacy
+    attributes:
+      label: Does it need to run on-device (private)?
+      options:
+        - "Yes, the data is sensitive and should not be uploaded"
+        - "No, it is fine either way"
+        - "Not sure"
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Similar tools you have used, a model/library you know does this, etc.
+    validations:
+      required: false

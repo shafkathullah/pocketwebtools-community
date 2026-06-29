@@ -1,0 +1,12 @@
+# Hides the "blank issue" option so people use the templates (or Discussions).
+blank_issues_enabled: false
+contact_links:
+  - name: 💡 Suggest a tool or share feedback
+    url: https://github.com/shafkathullah/pocketwebtools-community/discussions/categories/ideas
+    about: For tool ideas and open-ended feedback, start a discussion. It is easier to vote and comment on than an issue.
+  - name: 💬 Questions / Q&A
+    url: https://github.com/shafkathullah/pocketwebtools-community/discussions/categories/q-a
+    about: Ask anything about how the tools work, privacy, browser support, etc.
+  - name: 🌐 Just use the tools
+    url: https://pocketweb.tools
+    about: All the tools, free and in your browser.
