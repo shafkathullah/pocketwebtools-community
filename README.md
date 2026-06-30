@@ -6,6 +6,13 @@
 
 # PocketWebTools
 
+<!-- hero image: copied from apps/web/public/hero.webp into this repo's assets/ folder -->
+<p align="center">
+  <a href="https://pocketweb.tools">
+    <img src="assets/hero.webp" alt="PocketWebTools" width="340">
+  </a>
+</p>
+
 **Private, free, fast. AI that runs in your browser.**
 
 [pocketweb.tools](https://pocketweb.tools) is a free toolkit of tools that run entirely in your browser. The AI tools run on your own device with WebGPU (falling back to WebAssembly), so your files never get uploaded. No accounts, no limits, no servers.
